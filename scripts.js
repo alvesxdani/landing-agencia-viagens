@@ -6,7 +6,10 @@ let contatos = []
 
 function listarContatos(nome, tel) {
   lista_contatos.innerHTML += `
-    <li><strong>${nome}</strong>: ${tel}</li>
+  <tr>
+  <td>${nome}</td>
+  <td>${tel}</td>
+  </tr>
     `
   console.log(nome, tel)
 }
