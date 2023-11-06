@@ -49,5 +49,9 @@ h1, h2 {
 }
 
 ul li {
-  list-style-type: upper-roman;
+  margin-bottom: 0.5rem;
+}
+
+.riscado {
+  text-decoration: line-through;
 }
