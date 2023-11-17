@@ -1,20 +1,11 @@
 $(document).ready(function() {
-  $('.forms').submit(function(e) {
-    e.preventDefault();
-  
-    let valor = $('#nome-tarefa').val()
-  
-    $(`
-      <li>${valor}</li>
-    `).appendTo('#tarefas')
+  $('#phone').mask('(00) 00000-0000', {
+    placeholder: 'Seu telefone'
   })
-
-  $("ul").on("click", "li", function() {
-    if (!$(this).hasClass("riscado")) {
-      $(this).addClass("riscado");
-    } else {
-      $(this).removeClass("riscado");
-    }
-  });
-});
-
+  $('#cpf').mask('000.000.000-00', {
+    placeholder: 'CPF'
+  })
+  $('#cep').mask('00000-000', {
+    placeholder: 'CEP'
+  })
+})

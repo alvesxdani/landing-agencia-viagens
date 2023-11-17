@@ -3,26 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To-do List</title>
+  <title>Formulário</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <main>
     <div class="container">
-      <div class="box">
-        <form class="forms">
-          <input type="text" name="nome-tarefa" id="nome-tarefa" placeholder="Nome da tarefa">
-          <button type="submit">Adicionar Tarefa</button>
-        </form>
-      </div>
-      <div class="box">
-        <h2>Lista de tarefas</h2>
-        <ul id="tarefas">
-        </ul>
-      </div>
+      <h2>Cadastro</h2>
+      <form id="forms">
+        <div class="row">
+          <input type="text" name="name" id="name" placeholder="Seu nome completo">
+        </div>
+        <div class="row">
+          <input type="email" name="email" id="email" placeholder="Seu e-mail">
+        </div>
+        <div class="row">
+          <input type="tel" name="phone" id="phone">
+        </div>
+        <div class="row">
+          <input type="text" name="cpf" id="cpf">
+        </div>
+        <div class="row">
+          <input type="text" name="endereco" id="endereco" placeholder="Seu endereço completo">
+        </div>
+        <div class="row">
+          <input type="text" name="cep" id="cep">
+        </div>
+        <div class="row">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
     </div>
   </main>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./jquery-3.7.1.min.js"></script>
+  <script src="./jquery.mask.min.js"></script>
   <script src="./scripts.js"></script>
 </body>
 </html>
