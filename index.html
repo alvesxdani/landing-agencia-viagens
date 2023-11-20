@@ -1,42 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário</title>
+  <title>EBAC Shoes</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <!-- Header -->
+  <header class="container">
+    <h1>EBAC Shoes</h1>
+
+    <nav>
+      <ul class="links">
+        <li>
+          <a href="#sobre">Sobre a loja</a>
+        </li>
+        <li>
+          <a href="#produtos">Produtos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
   <main>
-    <div class="container">
-      <h2>Cadastro</h2>
-      <form id="forms">
-        <div class="row">
-          <input type="text" name="name" id="name" placeholder="Seu nome completo">
+    <section id="sobre">
+      <img src="./assets/lojas-de-tenis-em-new-york.webp" alt="Loja de tênis">
+      <div class="container">
+        <h2>Sobre a loja</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi voluptates ut dolorum, vitae voluptate quod voluptatum unde nesciunt non aliquam perferendis dolores fuga iusto magni facere adipisci. Assumenda, doloribus?
+          Non officia similique natus itaque ullam aspernatur ex expedita labore laboriosam, dolor quos tempore ipsa dolore dolorum, exercitationem iste hic dicta odit vel quae asperiores explicabo delectus modi! Suscipit, impedit!
+        </p>
+      </div>
+    </section>
+
+    <section id="produtos">
+      <h2>Nossos produtos</h2>
+      <div class="container">
+        <div class="produto">
+          <img src="./assets/tenis-1.jpeg" alt="Adidas Superstar">
+          <h3>Super Star Adidas</h3>
+          <p>
+            Tênis disponível nos tamanhos: 36, 37, 38, 39, 40, 41 e 42.
+          </p>
         </div>
-        <div class="row">
-          <input type="email" name="email" id="email" placeholder="Seu e-mail">
+        <div class="produto">
+          <img src="./assets/tenis-1.jpeg" alt="Adidas Superstar">
+          <h3>Super Star Adidas</h3>
+          <p>
+            Tênis disponível nos tamanhos: 36, 37, 38, 39, 40, 41 e 42.
+          </p>
         </div>
-        <div class="row">
-          <input type="tel" name="phone" id="phone">
+        <div class="produto">
+          <img src="./assets/tenis-1.jpeg" alt="Adidas Superstar">
+          <h3>Super Star Adidas</h3>
+          <p>
+            Tênis disponível nos tamanhos: 36, 37, 38, 39, 40, 41 e 42.
+          </p>
         </div>
-        <div class="row">
-          <input type="text" name="cpf" id="cpf">
+        <div class="produto">
+          <img src="./assets/tenis-1.jpeg" alt="Adidas Superstar">
+          <h3>Super Star Adidas</h3>
+          <p>
+            Tênis disponível nos tamanhos: 36, 37, 38, 39, 40, 41 e 42.
+          </p>
         </div>
-        <div class="row">
-          <input type="text" name="endereco" id="endereco" placeholder="Seu endereço completo">
-        </div>
-        <div class="row">
-          <input type="text" name="cep" id="cep">
-        </div>
-        <div class="row">
-          <button type="submit">Enviar</button>
-        </div>
-      </form>
-    </div>
+      </div>
+    </section>
   </main>
-  <script src="./jquery-3.7.1.min.js"></script>
-  <script src="./jquery.mask.min.js"></script>
+
   <script src="./scripts.js"></script>
 </body>
+
 </html>

@@ -4,50 +4,97 @@
   box-sizing: border-box;
 }
 
-main {
+html, body {
   width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-family: 'Open Sans', serif;
 }
 
-.container {
-  border: 1px solid #eee;
-  border-radius: 0.7rem;
-  width: 30rem;
-  padding: 2rem;
+header.container {
+  background: #333;
+  padding: 1rem 3rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 80%;
+  margin: 2rem auto;
 }
 
 h2 {
-  font-size: 2rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #333;
-  margin-bottom: 1.5rem;
-  text-align: center;
+  border-bottom: 2px solid #333;
+  margin-bottom: 2rem;
+  padding: 0.7rem;
+  font-family: 'Poppins', sans-serif;
 }
 
-input {
-  background-color: #f5f5f5;
-  border: none;
-  padding: 0.6rem;
-  margin-bottom: 1rem;
-  border-radius: 0.5rem;
-  width: 100%;
-  color: #aaa;
+#sobre {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
-button {
-  width: 100%;
-  background-color: #e9e9e9;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  border: none;
-  transition: .80s;
+#sobre img {
+  width: 50%;
 }
 
-button:hover {
-  background-color: #333;
-  color: white;
+#produtos .container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#produtos .produto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-align: justify;
+}
+
+#produtos img {
+  max-width: 100%;
+}
+
+#produtos h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  #produtos .container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  #sobre {
+    flex-direction: column;
+  }
+
+  #sobre img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #produtos .container {
+      grid-template-columns: 1fr;
+  }
 }
