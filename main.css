@@ -6,18 +6,58 @@ body {
     background-color: #e15f41;
 }
 
-.nav .nav-link.active {
+#cabecalho .nav .nav-link.active {
     background: #fff;
     color: #e15f41;
 }
 
-.nav .nav-link,
+#cabecalho .nav .nav-link,
 .navbar-brand,
-.navbar-brand:hover {
+.navbar-brand:hover,
+#cardapio .nav-cardapio .nav-link.active:hover {
     color: #fff;
 }
 
 .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-toggler {
+    background-color: #ffeae6;
+}
+
+.section-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+}
+
+#sobre,
+#cardapio {
+    background-color: #ffeae6;
+}
+
+.text-colored {
+    color: #e15f41;
+}
+
+#cardapio .nav-cardapio .nav-link.active,
+#contato button {
+    background-color: #e15f41;
+    color: #fff;
+}
+
+#cardapio .nav-cardapio .nav-link:hover {
+    color: #e15f41;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
 }
