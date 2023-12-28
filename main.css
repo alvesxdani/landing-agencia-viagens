@@ -1,20 +1,23 @@
+:root {
+    --main-color: #8961c9;
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
 
 .navbar {
-    background-color: #e15f41;
+    background-color: var(--main-color);
 }
 
 #cabecalho .nav .nav-link.active {
     background: #fff;
-    color: #e15f41;
+    color: var(--main-color);
 }
 
 #cabecalho .nav .nav-link,
 .navbar-brand,
 .navbar-brand:hover,
-#cardapio .nav-cardapio .nav-link.active:hover {
+#ofertas .nav-cardapio .nav-link.active:hover {
     color: #fff;
 }
 
@@ -32,22 +35,22 @@ body {
 }
 
 #sobre,
-#cardapio {
+#ofertas {
     background-color: #ffeae6;
 }
 
 .text-colored {
-    color: #e15f41;
+    color: var(--main-color);
 }
 
-#cardapio .nav-cardapio .nav-link.active,
+#ofertas .nav-cardapio .nav-link.active,
 #contato button {
-    background-color: #e15f41;
+    background-color: var(--main-color);
     color: #fff;
 }
 
-#cardapio .nav-cardapio .nav-link:hover {
-    color: #e15f41;
+#ofertas .nav-cardapio .nav-link:hover {
+    color: var(--main-color);
 }
 
 .social-links li {
